@@ -1,4 +1,4 @@
-import { Globe, Globe2 } from "lucide-react";
+import { Globe2 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 const menuItems = [

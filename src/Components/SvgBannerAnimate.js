@@ -1,6 +1,37 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const SvgBannerAnimate = () => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  // Function to handle mouse movement
+  const handleMouseMove = (event) => {
+    const { clientX, clientY } = event;
+    setMousePos({
+      x: (clientX / window.innerWidth - 0.5) * 20, // Modify the multiplier to control movement range
+      y: (clientY / window.innerHeight - 0.5) * 20, // Modify the multiplier to control movement range
+    });
+  };
+
+  // Simple debounce function to limit the number of event handler executions
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return (...args) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => func(...args), delay);
+    };
+  };
+
+  useEffect(() => {
+    const debounceMouseMove = debounce(handleMouseMove, 15); // Apply debounce to mousemove event
+    window.addEventListener("mousemove", debounceMouseMove);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("mousemove", debounceMouseMove);
+    };
+  }, []);
+
   return (
     <svg
       className="hidden md:block object-cover absolute inset-0"

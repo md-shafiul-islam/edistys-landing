@@ -4,6 +4,8 @@ import SectionTitle from "@/Components/Utils/SectionTitle";
 import SectionHeading from "@/Components/Utils/SectionHeading";
 import Paragraph from "../Utils/Paragraph";
 
+import CstImage from "../Utils/CstImage";
+
 const FutureSection = () => {
   return (
     <div className="grid grid-cols-2 gap-7">
@@ -28,7 +30,7 @@ const FutureSection = () => {
       </div>
       <div className="col-span-2 md:col-span-1">
         <div className="">
-          <img src="/assets/images/feature.avif" />
+          <CstImage to="/assets/images/feature.avif" />
         </div>
       </div>
     </div>

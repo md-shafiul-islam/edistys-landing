@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "@/Components/Utils/SectionTitle";
 import SectionHeading from "@/Components/Utils/SectionHeading";
-import Carousel from "@/Components/Utils/Carousel";
+import CstSwiperSlider from "@/Components/Utils/CstSwiperSlider";
 
 const TechnologySection = () => {
   return (
@@ -9,7 +9,9 @@ const TechnologySection = () => {
       <SectionTitle title="TECHNOLOGY BUILT FOR YOU" />
       <SectionHeading title="The future of finance" />
 
-      <Carousel />
+      <div className="w-full grid ">
+        <CstSwiperSlider />
+      </div>
     </div>
   );
 };
