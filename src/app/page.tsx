@@ -17,7 +17,7 @@ export default function Home() {
       </section>
 
       <section
-        className="container mx-auto my-16 banner-polygon"
+        className="container mx-auto my-16 banner-polygon bg-cover bg-center"
         style={{
           background: `url('/assets/backgrounds/WaveLinesDesktop4.svg')`,
         }}

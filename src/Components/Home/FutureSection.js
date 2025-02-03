@@ -2,13 +2,13 @@ import React from "react";
 
 import SectionTitle from "@/Components/Utils/SectionTitle";
 import SectionHeading from "@/Components/Utils/SectionHeading";
-import Paragraph from "../Utils/Paragraph";
+import Paragraph from "@/Components/Utils/Paragraph";
 
-import CstImage from "../Utils/CstImage";
+import FutureImage from "@/Components/Home/FutureImage";
 
 const FutureSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-7">
+    <div className="grid grid-cols-2 gap-7 min-h-[650px]">
       <div className="col-span-2 md:col-span-1 flex flex-col gap-6 ">
         <SectionTitle title="POWERING THE FUTURE OF FINANCE" />
         <h4 className="text-base font-bold tracking-[2.56px] text-blue-main"></h4>
@@ -29,9 +29,7 @@ const FutureSection = () => {
         />
       </div>
       <div className="col-span-2 md:col-span-1">
-        <div className="">
-          <CstImage to="/assets/images/feature.avif" />
-        </div>
+        <FutureImage />
       </div>
     </div>
   );

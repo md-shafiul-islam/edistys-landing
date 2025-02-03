@@ -50,24 +50,4 @@
   #banner-svg:hover #banner-svg {
     transform: translateX(-10%);
   }
-
-  .draggable-carousel-wrapper {
-    position: relative;
-    display: block;
-    width: 90vw;
-  }
-  .draggable-carousel {
-    position: absolute;
-    overflow: hidden;
-    width: 90vw;
-  }
-
-  .draggable-carousel-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: repeat(4, 90vw);
-  }
 }

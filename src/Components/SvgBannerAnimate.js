@@ -8,8 +8,8 @@ const SvgBannerAnimate = () => {
   const handleMouseMove = (event) => {
     const { clientX, clientY } = event;
     setMousePos({
-      x: (clientX / window.innerWidth - 0.5) * 20, // Modify the multiplier to control movement range
-      y: (clientY / window.innerHeight - 0.5) * 20, // Modify the multiplier to control movement range
+      x: (clientX / window.innerWidth - 0.5) * 40, // Modify the multiplier to control movement range
+      y: (clientY / window.innerHeight - 0.5) * 40, // Modify the multiplier to control movement range
     });
   };
 
@@ -46,32 +46,85 @@ const SvgBannerAnimate = () => {
         <path
           d="M828 -327.405V-693L-354 489H11.5957L828 -327.405Z"
           fill="url(#paint0_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
+        />
+      </g>
+      {/* You can apply the same dynamic transformation to other paths similarly */}
+      <g filter="url(#filter0_f_26_269)">
+        <path
+          d="M1350 445H1469L1350 564V445Z"
+          fill="url(#paint1_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
+        />
+      </g>
+      <path
+        d="M2028 148.679V33L1654 407H1769.68L2028 148.679Z"
+        fill="url(#paint3_linear_26_269)"
+        style={{
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+          transition: "transform 0.2s ease-out",
+        }}
+      />
+      <g style={{ mixBlendMode: "multiply" }}>
+        <path
+          d="M828 -327.405V-693L-354 489H11.5957L828 -327.405Z"
+          fill="url(#paint0_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g filter="url(#filter0_f_26_269)">
         <path
           d="M1350 445H1469L1350 564V445Z"
           fill="url(#paint1_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
         <path
           d="M1350 445H1469L1350 564V445Z"
           fill="url(#paint2_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <path
         d="M2028 148.679V33L1654 407H1769.68L2028 148.679Z"
         fill="url(#paint3_linear_26_269)"
+        style={{
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+          transition: "transform 0.2s ease-out",
+        }}
       />
       <g filter="url(#filter1_f_26_269)">
         <path
           d="M1940 78.9349V-12L1646 282H1736.93L1940 78.9349Z"
           fill="url(#paint4_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g filter="url(#filter2_f_26_269)">
         <path
           d="M546 -179L167 200H194.084L546 -151.916V-179Z"
           fill="url(#paint5_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
         <path
           d="M546 -179L167 200H194.084L546 -151.916V-179Z"
@@ -82,55 +135,95 @@ const SvgBannerAnimate = () => {
         <path
           d="M225 337L-110 672H-86.0607L225 360.939V337Z"
           fill="url(#paint7_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <path
         opacity="0.73"
         d="M38 151H135L38 248V151Z"
         fill="url(#paint8_linear_26_269)"
+        style={{
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+          transition: "transform 0.2s ease-out",
+        }}
       />
       <g filter="url(#filter4_f_26_269)">
         <path
           d="M1966.1 304L1745 525.1H1760.8L1966.1 319.8V304Z"
           fill="url(#paint9_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g style={{ mixBlendMode: "multiply" }}>
         <path
           d="M2028 321.567V183L1580 631H1718.57L2028 321.567Z"
           fill="url(#paint10_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g filter="url(#filter5_f_26_269)">
         <path
           d="M1989 -173.321V-289L1615 85H1730.68L1989 -173.321Z"
           fill="url(#paint11_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <path
         d="M705 -543L44 118H91.2741L705 -495.726V-543Z"
         fill="url(#paint12_linear_26_269)"
+        style={{
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+          transition: "transform 0.2s ease-out",
+        }}
       />
       <path
         d="M705 -543L44 118H91.2741L705 -495.726V-543Z"
         fill="url(#paint13_linear_26_269)"
+        style={{
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+          transition: "transform 0.2s ease-out",
+        }}
       />
       <g filter="url(#filter6_f_26_269)">
         <path
           d="M465.1 -154L244 67.1H259.8L465.1 -138.2V-154Z"
           fill="url(#paint14_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g filter="url(#filter7_f_26_269)">
         <path
           d="M1809.1 -57L1588 164.1H1603.8L1809.1 -41.2V-57Z"
           fill="url(#paint15_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <g filter="url(#filter8_f_26_269)">
         <path
           d="M1801 49H1854L1801 102V49Z"
           fill="url(#paint16_linear_26_269)"
+          style={{
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+            transition: "transform 0.2s ease-out",
+          }}
         />
       </g>
       <defs>

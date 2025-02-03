@@ -31,7 +31,7 @@ const FooterSection = () => {
                 data-x-lqip-transition-duration={0}
                 loading="lazy"
                 style={{ width: "100%", height: "auto", objectFit: "cover" }}
-                className="!w-[127px] !w-[217px] !object-contain"
+                className=" !w-[217px] !object-contain"
                 alt="AnyTech"
               />
             </picture>
