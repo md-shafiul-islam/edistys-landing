@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactBtn = () => {
   return (
-    <button className="flex flex-row items-center transition-all delay-150  gap-3 border px-5 py-3 bg-ora ">
-      <span>Reach Out to Us</span>{" "}
-      <span className="pl-4">
+    <button className="flex flex-row items-center transition-all delay-150  border px-5 py-3 bg-orange-500 ">
+      <span className="pl-4 hover:-ml-4 transition-all  duration-200">Reach Out to Us</span>{" "}
+      <span className="pl-4 transition-all hover:pl-4 duration-200 ">
         <svg
           width="6"
           height="9"

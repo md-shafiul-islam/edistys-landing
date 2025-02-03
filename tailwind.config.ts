@@ -38,11 +38,17 @@ export default {
       },
       animation: {
         float: "float 3s ease-in-out infinite",
+        dash: "dash 2s linear infinite",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        dash: {
+          "0%": { strokeDasharray: "1, 200", strokeDashoffset: "0" },
+          "50%": { strokeDasharray: "100, 200", strokeDashoffset: "-50px" },
+          "100%": { strokeDasharray: "100, 200", strokeDashoffset: "-100px" },
         },
       },
     },
