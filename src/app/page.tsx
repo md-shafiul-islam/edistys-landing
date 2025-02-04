@@ -4,7 +4,6 @@ import PhilosophySection from "@/Components/Home/PhilosophySection";
 import TechnologySection from "@/Components/Home/TechnologySection";
 import BsetSection from "@/Components/Home/BsetSection";
 import FooterSection from "@/Components/Home/FooterSection";
-import SvgBannerAnimate from "@/Components/SvgBannerAnimate";
 
 export default function Home() {
   return (

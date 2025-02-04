@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Live Site: [Anytxn](https://anytxn-one.vercel.app/)
+
+##Packages
+
+| Name          | Version |
+| ------------- | ------- |
+| lucide-react  | 0.474.0 |
+| next          | 15.1.6  |
+| react         | ^19.0.0 |
+| react-countup | ^6.5.3  |
+| react-dom     | ^19.0.0 |
+| swiper        | ^11.1.1 |
